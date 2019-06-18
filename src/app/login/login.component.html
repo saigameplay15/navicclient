@@ -1,0 +1,17 @@
+<div class="col-md-6">
+  <h2 class="text-center">Login</h2>
+  <a>{{ errtext }}</a>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="name" formControlName="username" placeholder="Username" name="username" class="form-control" id="username">
+    </div>
+
+    <div class="form-group">
+      <label for="empId">Employee Id</label>
+      <input type="password" formControlName="password" placeholder="Password" name="password" class="form-control" id="empId">
+    </div>
+  
+    <button class="btn btn-success" type="submit">Create</button>
+  </form>
+</div>
